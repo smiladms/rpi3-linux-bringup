@@ -24,6 +24,6 @@ This repository highlights the critical boot path and initialization scripts req
 ## 📁 Repository Files
 *(I recommend copying your custom `boot.txt`, `rcS`, and `inittab` files from your Ubuntu machine into this folder so hiring managers can actually read the code you wrote!)*
 
-## 📸 System Showcase
+## 📸 
 
 <img width="949" height="1280" alt="photo_2026-08-14_01-54-42" src="https://github.com/user-attachments/assets/f65c6c10-7de7-433b-9fd0-9b94308d0e44" />
