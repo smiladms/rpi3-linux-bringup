@@ -21,8 +21,6 @@ This repository highlights the critical boot path and initialization scripts req
 2. **User Space Initialization:** SysVinit configuration (`inittab`) configured to bootstrap the system, execute startup scripts (`rcS`) to mount virtual filesystems (`/proc`, `/sys`, `devtmpfs`), and spawn a serial console (`ttyS1`).
 3. **Storage Migration:** Successfully transitioned the root filesystem from a volatile RAM disk (`initramfs`) to a persistent block device for long-term data retention.
 
-## 📁 Repository Files
-*(I recommend copying your custom `boot.txt`, `rcS`, and `inittab` files from your Ubuntu machine into this folder so hiring managers can actually read the code you wrote!)*
 
 ## 📸 
 
