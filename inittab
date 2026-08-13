@@ -1,0 +1,11 @@
+# Run the startup script during system boot
+::sysinit:/etc/init.d/rcS
+
+# Start a shell on the serial console
+console::respawn:/bin/sh
+
+# What to do when restarting or shutting down
+::ctrlaltdel:/sbin/reboot
+::shutdown:/sbin/swapoff -a
+::shutdown:/bin/umount -a -r
+::restart:/sbin/init

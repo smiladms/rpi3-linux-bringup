@@ -1,0 +1,10 @@
+# Set the kernel boot arguments
+# rootwait is important! It tells the kernel to wait for the SD card driver to load before trying to mount the rootfs.
+setenv bootargs "console=ttyS1,115200 root=/dev/mmcblk0p2 rootfstype=ext4 rw rootwait"
+
+# Load the kernel and Device Tree from the FAT32 partition
+fatload mmc 0:1 ${kernel_addr_r} Image
+fatload mmc 0:1 0x04000000 bcm2837-rpi-3-b.dtb
+
+# Boot the kernel! (Notice we removed the initramfs address)
+booti ${kernel_addr_r} - 0x04000000

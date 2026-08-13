@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Mount /proc and /sys
+mount -t proc none /proc
+mount -t sysfs none /sys
+
+# Mount devtmpfs to automatically populate /dev with device nodes (Optional if kernel does it)
+mount -t devtmpfs none /dev
+
+echo "Welcome to your Custom Embedded Linux System!"
